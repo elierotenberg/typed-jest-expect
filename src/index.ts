@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type TMockFn<R = any, Args extends any[] = any> = jest.Mock<R, Args>;
 
-type TNumber = number | BigInt;
+type TNumber = number | bigint;
 
 type TConstructor<T> = {
   new (...args: never): T;
